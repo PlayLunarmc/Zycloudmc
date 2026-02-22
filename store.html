@@ -7,124 +7,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif}
-
-body{
-background:#0c1220;
-color:white;
-overflow-x:hidden;
-}
-
-nav{
-position:fixed;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 80px;
-background:rgba(0,0,0,0.6);
-backdrop-filter:blur(10px);
-z-index:1000;
-}
-
+body{background:#0c1220;color:white;overflow-x:hidden}
+nav{position:fixed;width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 80px;background:rgba(0,0,0,0.6);backdrop-filter:blur(10px);z-index:1000;}
 nav h1{color:#00e0ff;font-weight:800}
 nav ul{display:flex;gap:40px;list-style:none}
-nav ul li a{
-text-decoration:none;
-color:white;
-font-weight:600;
-transition:.3s;
-}
+nav ul li a{text-decoration:none;color:white;font-weight:600}
 nav ul li a:hover{color:#00e0ff}
-
-.hero{
-height:60vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:radial-gradient(circle at top,#16213e,#0c1220);
-}
-
-.hero h2{
-font-size:4rem;
-color:#00e0ff;
-font-weight:800;
-}
-
-.hero p{
-margin-top:15px;
-opacity:.8;
-}
-
-.section{
-padding:100px 80px;
-text-align:center;
-}
-
-.section h3{
-font-size:2.5rem;
-margin-bottom:60px;
-color:#00e0ff;
-}
-
-.store-grid{
-display:flex;
-justify-content:center;
-gap:40px;
-flex-wrap:wrap;
-}
-
-.card{
-background:rgba(255,255,255,0.05);
-padding:40px;
-border-radius:20px;
-width:280px;
-transition:.3s;
-position:relative;
-}
-
-.card:hover{
-transform:translateY(-10px);
-background:rgba(0,224,255,0.15);
-}
-
-.rank-title{
-font-size:1.5rem;
-font-weight:800;
-margin-bottom:10px;
-}
-
-.price{
-margin:20px 0;
-font-size:1.3rem;
-color:#00e0ff;
-}
-
-.buy-btn{
-padding:12px 35px;
-border:none;
-border-radius:40px;
-background:linear-gradient(45deg,#00e0ff,#0099ff);
-font-weight:700;
-cursor:pointer;
-transition:.3s;
-}
-
-.buy-btn:hover{
-transform:scale(1.05);
-}
-
-footer{
-background:black;
-padding:30px;
-text-align:center;
-opacity:.7;
-margin-top:80px;
-}
+.hero{height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:radial-gradient(circle at top,#16213e,#0c1220);}
+.hero h2{font-size:4rem;color:#00e0ff;font-weight:800;}
+.hero p{margin-top:15px;opacity:.8;}
+.section{padding:100px 80px;text-align:center;}
+.section h3{font-size:2.5rem;margin-bottom:60px;color:#00e0ff;}
+.store-grid{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;}
+.card{background:rgba(255,255,255,0.05);padding:40px;border-radius:20px;width:280px;transition:.3s;position:relative;}
+.card:hover{transform:translateY(-10px);background:rgba(0,224,255,0.15);}
+.rank-title{font-size:1.5rem;font-weight:800;margin-bottom:10px;}
+.price{margin:20px 0;font-size:1.3rem;color:#00e0ff;}
+.buy-btn{padding:12px 35px;border:none;border-radius:40px;background:linear-gradient(45deg,#00e0ff,#0099ff);font-weight:700;cursor:pointer;transition:.3s;}
+.buy-btn:hover{transform:scale(1.05);}
+footer{background:black;padding:30px;text-align:center;opacity:.7;margin-top:80px;}
 </style>
 </head>
-
 <body>
 
 <nav>
@@ -145,7 +48,6 @@ margin-top:80px;
 <div class="section">
 <h3>Ranks</h3>
 <div class="store-grid">
-
 <div class="card">
 <div class="rank-title" style="color:gold;">👑 GOLD</div>
 <p>Tag esclusivo</p>
@@ -153,7 +55,6 @@ margin-top:80px;
 <div class="price">€4.99</div>
 <button class="buy-btn">Compra</button>
 </div>
-
 <div class="card">
 <div class="rank-title" style="color:#00e0ff;">💎 DIAMOND</div>
 <p>Tutti i vantaggi GOLD</p>
@@ -161,7 +62,6 @@ margin-top:80px;
 <div class="price">€9.99</div>
 <button class="buy-btn">Compra</button>
 </div>
-
 <div class="card">
 <div class="rank-title" style="color:#ff4d6d;">🔥 LEGEND</div>
 <p>Tutti i vantaggi DIAMOND</p>
@@ -169,7 +69,6 @@ margin-top:80px;
 <div class="price">€14.99</div>
 <button class="buy-btn">Compra</button>
 </div>
-
 </div>
 </div>
 
@@ -177,21 +76,18 @@ margin-top:80px;
 <div class="section">
 <h3>Crates</h3>
 <div class="store-grid">
-
 <div class="card">
 <div class="rank-title">🎁 Common Crate</div>
 <p>Ricompense casuali</p>
 <div class="price">€1.99</div>
 <button class="buy-btn">Compra</button>
 </div>
-
 <div class="card">
 <div class="rank-title">🎉 Epic Crate</div>
 <p>Oggetti rari</p>
 <div class="price">€3.99</div>
 <button class="buy-btn">Compra</button>
 </div>
-
 </div>
 </div>
 
@@ -199,19 +95,16 @@ margin-top:80px;
 <div class="section">
 <h3>Coins</h3>
 <div class="store-grid">
-
 <div class="card">
 <div class="rank-title">💰 1.000 Coins</div>
 <div class="price">€2.99</div>
 <button class="buy-btn">Compra</button>
 </div>
-
 <div class="card">
 <div class="rank-title">💰 5.000 Coins</div>
 <div class="price">€9.99</div>
 <button class="buy-btn">Compra</button>
 </div>
-
 </div>
 </div>
 

@@ -16,7 +16,7 @@ nav ul li a:hover{color:#00e0ff;}
 .hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:radial-gradient(circle at top,#16213e,#0c1220);}
 .hero h2{font-size:5rem;font-weight:800;color:#00e0ff;}
 .hero p{margin-top:20px;font-size:1.3rem;opacity:.8;}
-.play-btn{margin-top:40px;padding:18px 50px;border:none;border-radius:50px;background:linear-gradient(45deg,#00e0ff,#0099ff);font-size:1.1rem;font-weight:700;cursor:pointer;transition:.3s;}
+.play-btn{margin-top:10px;padding:18px 50px;border:none;border-radius:50px;font-size:1.1rem;font-weight:700;cursor:pointer;transition:.3s;color:white;}
 .play-btn:hover{transform:scale(1.07);}
 .section{padding:120px 80px;text-align:center;}
 .section h3{font-size:2.5rem;margin-bottom:60px;color:#00e0ff;}
@@ -44,7 +44,11 @@ footer{background:black;padding:30px;text-align:center;opacity:.7;}
 <div class="hero">
 <h2>ZycloudMC</h2>
 <p>Il Network Minecraft competitivo di nuova generazione</p>
-<button class="play-btn" onclick="copyIP()">GIOCA ORA</button>
+<div style="margin-top:40px; display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
+  <button class="play-btn" style="background:linear-gradient(45deg,#00e0ff,#0099ff)" onclick="copyIP()">GIOCA ORA</button>
+  <a href="store.html"><button class="play-btn" style="background:linear-gradient(45deg,#ffb400,#ff6a00)">STORE</button></a>
+  <a href="staff.html"><button class="play-btn" style="background:linear-gradient(45deg,#6a0cff,#b366ff)">STAFF</button></a>
+</div>
 </div>
 
 <div class="section">

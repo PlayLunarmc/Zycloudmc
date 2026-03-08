@@ -15,17 +15,28 @@ body{
 }
 
 /* NAVBAR */
-nav{position:fixed;width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 80px;background: rgba(0,0,0,0.5);backdrop-filter:blur(10px);z-index:1000;}
+nav{
+  position:fixed;width:100%;display:flex;justify-content:space-between;align-items:center;
+  padding:20px 80px;background: rgba(0,0,0,0.5);backdrop-filter:blur(10px);z-index:1000;
+}
 nav h1{color:#00e0ff;font-weight:800;font-size:1.8rem;}
 nav ul{display:flex;gap:40px;list-style:none;}
 nav ul li a{color:white;font-weight:600;transition:.3s;}
 nav ul li a:hover{color:#00e0ff;}
 
-/* STORE SECTION */
-.section{padding:120px 80px;text-align:center;background: rgba(0,150,255,0.3);backdrop-filter:blur(8px);margin-top:100px;border-radius:20px;}
-.section h3{font-size:2.8rem;margin-bottom:60px;color:#00e0ff;text-shadow:1px 1px 5px black;}
+/* SECTIONS */
+.section{
+  padding:120px 80px;text-align:center;
+  background: rgba(0,150,255,0.3);backdrop-filter:blur(8px);
+  margin-top:100px;border-radius:20px;
+}
+.section h3{
+  font-size:2.8rem;margin-bottom:60px;color:#00e0ff;text-shadow:1px 1px 5px black;
+}
 .store-grid{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;}
-.card{background: rgba(0,224,255,0.15);padding:40px;border-radius:20px;width:280px;transition:.3s;}
+.card{
+  background: rgba(0,224,255,0.15);padding:40px;border-radius:20px;width:280px;transition:.3s;
+}
 .card:hover{background: rgba(0,224,255,0.25);transform:translateY(-5px);}
 .rank-title{font-size:1.5rem;font-weight:800;margin-bottom:10px;}
 .price{margin:20px 0;font-size:1.3rem;color:#00e0ff;}
@@ -45,6 +56,7 @@ footer a:hover{color:#fff;}
 </head>
 <body>
 
+<!-- NAVBAR -->
 <nav>
 <h1>ZycloudMC</h1>
 <ul>
@@ -54,38 +66,99 @@ footer a:hover{color:#fff;}
 </ul>
 </nav>
 
+<!-- VIP / RANKS -->
 <div class="section">
-<h3>Ranks & Store</h3>
+<h3>Ranks VIP</h3>
 <div class="store-grid">
-<div class="card">
-<div class="rank-title" style="color:gold;">👑 GOLD</div>
-<p>Tag esclusivo</p>
-<p>Accesso comandi speciali</p>
-<div class="price">€4.99</div>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_xclick">
-<input type="hidden" name="business" value="TUAEMAILPAYPAL@example.com">
-<input type="hidden" name="item_name" value="Rank GOLD ZycloudMC">
-<input type="hidden" name="amount" value="4.99">
-<input type="hidden" name="currency_code" value="EUR">
-<button type="submit" class="buy-btn">Compra</button>
-</form>
+  <div class="card">
+    <div class="rank-title" style="color:gold;">👑 GOLD</div>
+    <p>Tag esclusivo + Comandi speciali</p>
+    <div class="price">€4.99</div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="TUAEMAILPAYPAL@example.com">
+      <input type="hidden" name="item_name" value="Rank GOLD ZycloudMC">
+      <input type="hidden" name="amount" value="4.99">
+      <input type="hidden" name="currency_code" value="EUR">
+      <button type="submit" class="buy-btn">Compra</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <div class="rank-title" style="color:#00e0ff;">💎 DIAMOND</div>
+    <p>Tutti i vantaggi GOLD + Kit esclusivi</p>
+    <div class="price">€9.99</div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="TUAEMAILPAYPAL@example.com">
+      <input type="hidden" name="item_name" value="Rank DIAMOND ZycloudMC">
+      <input type="hidden" name="amount" value="9.99">
+      <input type="hidden" name="currency_code" value="EUR">
+      <button type="submit" class="buy-btn">Compra</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <div class="rank-title" style="color:#50c878;">💚 EMERALD</div>
+    <p>Tutti i vantaggi DIAMOND + Effetti cosmetici</p>
+    <div class="price">€14.99</div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="TUAEMAILPAYPAL@example.com">
+      <input type="hidden" name="item_name" value="Rank EMERALD ZycloudMC">
+      <input type="hidden" name="amount" value="14.99">
+      <input type="hidden" name="currency_code" value="EUR">
+      <button type="submit" class="buy-btn">Compra</button>
+    </form>
+  </div>
+</div>
 </div>
 
-<div class="card">
-<div class="rank-title" style="color:#00e0ff;">💎 DIAMOND</div>
-<p>Tutti i vantaggi GOLD</p>
-<p>Kit esclusivi</p>
-<div class="price">€9.99</div>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_xclick">
-<input type="hidden" name="business" value="TUAEMAILPAYPAL@example.com">
-<input type="hidden" name="item_name" value="Rank DIAMOND ZycloudMC">
-<input type="hidden" name="amount" value="9.99">
-<input type="hidden" name="currency_code" value="EUR">
-<button type="submit" class="buy-btn">Compra</button>
-</form>
-</div>
+<!-- COINS / MONETE -->
+<div class="section">
+<h3>Coins / Monete</h3>
+<div class="store-grid">
+  <div class="card">
+    <div class="rank-title" style="color:#ffd700;">💰 100 Coins</div>
+    <p>Perfetto per iniziare a spendere nel server</p>
+    <div class="price">€1.99</div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="TUAEMAILPAYPAL@example.com">
+      <input type="hidden" name="item_name" value="100 Coins ZycloudMC">
+      <input type="hidden" name="amount" value="1.99">
+      <input type="hidden" name="currency_code" value="EUR">
+      <button type="submit" class="buy-btn">Compra</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <div class="rank-title" style="color:#ffd700;">💰 500 Coins</div>
+    <p>Per giocatori più esperti</p>
+    <div class="price">€7.99</div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="TUAEMAILPAYPAL@example.com">
+      <input type="hidden" name="item_name" value="500 Coins ZycloudMC">
+      <input type="hidden" name="amount" value="7.99">
+      <input type="hidden" name="currency_code" value="EUR">
+      <button type="submit" class="buy-btn">Compra</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <div class="rank-title" style="color:#ffd700;">💰 1000 Coins</div>
+    <p>Diventa un pro con le monete extra</p>
+    <div class="price">€14.99</div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="TUAEMAILPAYPAL@example.com">
+      <input type="hidden" name="item_name" value="1000 Coins ZycloudMC">
+      <input type="hidden" name="amount" value="14.99">
+      <input type="hidden" name="currency_code" value="EUR">
+      <button type="submit" class="buy-btn">Compra</button>
+    </form>
+  </div>
 </div>
 </div>
 

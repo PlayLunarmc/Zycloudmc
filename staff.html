@@ -8,21 +8,20 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif;}
 body{
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1612809895277-2a6e9ccbe191?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTI0OTZ8MHwxfGFsbHwxfHxtaW5lY3JhZnR8ZW58MHx8fHwxNjc4ODkzODAy&ixlib=rb-4.0.3&q=80&w=1920') no-repeat center center fixed;
-  background-size: cover;
-  color:white;
-  overflow-x:hidden;
+  background: linear-gradient(rgba(0,0,50,0.7), rgba(0,0,100,0.7)),
+              url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920') no-repeat center center fixed;
+  background-size: cover;color:white;overflow-x:hidden;
 }
 
 /* NAVBAR */
-nav{position:fixed;width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 80px;background:rgba(0,0,0,0.6);backdrop-filter:blur(10px);z-index:1000;}
+nav{position:fixed;width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 80px;background:rgba(0,0,50,0.7);backdrop-filter:blur(10px);z-index:1000;}
 nav h1{color:#00e0ff;font-weight:800;font-size:1.8rem;}
 nav ul{display:flex;gap:40px;list-style:none;}
 nav ul li a{color:white;font-weight:600;transition:.3s;}
 nav ul li a:hover{color:#00e0ff;}
 
-/* SECTIONS */
-.section{padding:120px 80px;text-align:center;background:rgba(0,0,0,0.4);backdrop-filter:blur(5px);margin-top:100px;border-radius:20px;}
+/* STAFF SECTION */
+.section{padding:120px 80px;text-align:center;background:rgba(0,0,50,0.7);backdrop-filter:blur(5px);margin-top:100px;border-radius:20px;}
 .section h3{font-size:2.8rem;margin-bottom:60px;color:#00e0ff;text-shadow:1px 1px 5px black;}
 .staff-preview{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;}
 .staff-card{background:rgba(255,255,255,0.05);padding:30px 50px;border-radius:20px;transition:.3s;min-width:200px;}
@@ -31,49 +30,27 @@ nav ul li a:hover{color:#00e0ff;}
 footer{background:black;padding:30px;text-align:center;opacity:.9;margin-top:80px;}
 footer a{color:#00e0ff;margin:0 10px;transition:.3s;}
 footer a:hover{color:#fff;}
-
-@media(max-width:768px){
-  nav{padding:15px 30px;}
-  .staff-card{width:90%;}
-}
+@media(max-width:768px){.staff-card{width:90%;} nav{padding:15px 30px;}}
 </style>
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav>
 <h1>ZycloudMC</h1>
 <ul>
 <li><a href="index.html">Home</a></li>
-<li><a href="#staff">Staff</a></li>
+<li><a href="staff.html">Staff</a></li>
 <li><a href="store.html">Store</a></li>
 </ul>
 </nav>
 
-<!-- STAFF -->
-<div class="section" id="staff">
+<div class="section">
 <h3>Staff</h3>
 <div class="staff-preview">
-  <!-- Owner 1 -->
-  <div class="staff-card">
-    <h4>👑 Owner</h4>
-    <p>_SharpX09_</p>
-  </div>
-  <!-- Owner 2 -->
-  <div class="staff-card">
-    <h4>👑 Owner</h4>
-    <p>Alen_ciaoo</p>
-  </div>
-  <!-- Admin -->
-  <div class="staff-card">
-    <h4>🛡 Admin</h4>
-    <p>AdminName1</p>
-  </div>
-  <!-- Mod -->
-  <div class="staff-card">
-    <h4>⚔ Mod</h4>
-    <p>ModName1</p>
-  </div>
+  <div class="staff-card"><h4>👑 Owner</h4><p>_SharpX09_</p></div>
+  <div class="staff-card"><h4>👑 Owner</h4><p>Alen_ciaoo</p></div>
+  <div class="staff-card"><h4>🛡 Admin</h4><p>AdminName1</p></div>
+  <div class="staff-card"><h4>⚔ Mod</h4><p>ModName1</p></div>
 </div>
 </div>
 

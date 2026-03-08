@@ -3,14 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZycloudMC - [Pagina]</title>
+<title>ZycloudMC - Home</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
 * {margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif;}
 body {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                url('https://images.unsplash.com/photo-1612809895277-2a6e9ccbe191?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1920') 
-                no-repeat center center fixed;
+    background: url('https://images.unsplash.com/photo-1598136496990-17f8f163f8e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1920') no-repeat center center fixed;
     background-size: cover;
     color: white;
     overflow-x: hidden;
@@ -33,21 +31,32 @@ nav ul {display:flex;gap:40px;list-style:none;}
 nav ul li a {color:white;font-weight:600;transition:.3s;}
 nav ul li a:hover {color:#00e0ff;}
 
-/* BOTTONI PRINCIPALI */
+/* HERO */
+.hero {
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    backdrop-filter:blur(2px);
+}
+.hero h2 {font-size:5rem;font-weight:800;color:#00e0ff;text-shadow:2px 2px 8px black;}
+.hero p {margin-top:20px;font-size:1.5rem;opacity:.9;text-shadow:1px 1px 5px black;}
 .play-btn {
-    margin-top:10px;
+    margin-top:20px;
     padding:18px 50px;
     border:none;
     border-radius:50px;
-    font-size:1.1rem;
+    font-size:1.2rem;
     font-weight:700;
     cursor:pointer;
     transition:.3s;
     color:white;
 }
-.play-btn:hover {transform:scale(1.07);}
+.play-btn:hover {transform:scale(1.08);}
 
-/* SEZIONI */
+/* SECTIONS */
 .section {
     padding:100px 80px;
     text-align:center;
@@ -62,15 +71,12 @@ nav ul li a:hover {color:#00e0ff;}
     color:#00e0ff;
     text-shadow:1px 1px 5px black;
 }
-.card, .staff-card {
-    background: rgba(255,255,255,0.05);
-    padding: 30px 50px;
-    border-radius: 20px;
-    transition:.3s;
-    min-width: 200px;
-}
-.card:hover, .staff-card:hover {background: rgba(0,224,255,0.15); transform: translateY(-5px);}
-.card h4, .staff-card h4 {font-size:1.5rem; margin-bottom:15px; text-shadow:1px 1px 5px black;}
+.modes {display:flex;justify-content:center;gap:40px;flex-wrap:wrap;}
+.card {background: rgba(255,255,255,0.05); padding:40px; border-radius:20px; width:280px; transition:.3s;}
+.card:hover {background: rgba(0,224,255,0.15); transform:translateY(-10px);}
+.card h4 {font-size:1.5rem; margin-bottom:15px; text-shadow:1px 1px 5px black;}
+
+/* FOOTER */
 footer {
     background:black;
     padding:30px;
@@ -83,7 +89,7 @@ footer a:hover {color:#fff;}
 
 @media(max-width:768px){
     nav {padding:15px 30px;}
-    .card, .staff-card {width:90%;}
+    .card {width:90%;}
 }
 </style>
 </head>
@@ -99,10 +105,34 @@ footer a:hover {color:#fff;}
 </ul>
 </nav>
 
-<!-- CONTENUTO -->
+<!-- HERO -->
+<div class="hero">
+<h2>ZycloudMC</h2>
+<p>Il Network Minecraft competitivo di nuova generazione</p>
+<div style="margin-top:40px; display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
+  <a href="index.html"><button class="play-btn" style="background:linear-gradient(45deg,#00e0ff,#0099ff)">GIOCA ORA</button></a>
+  <a href="store.html"><button class="play-btn" style="background:linear-gradient(45deg,#ffb400,#ff6a00)">STORE</button></a>
+  <a href="staff.html"><button class="play-btn" style="background:linear-gradient(45deg,#6a0cff,#b366ff)">STAFF</button></a>
+</div>
+</div>
+
+<!-- MODALITÀ -->
 <div class="section">
-<h3>Benvenuto su ZycloudMC</h3>
-<p>Qui va il contenuto principale della pagina...</p>
+<h3>Modalità di Gioco</h3>
+<div class="modes">
+<div class="card">
+<h4>⚔ BedWars</h4>
+<p>Combatti e difendi il tuo letto contro gli avversari.</p>
+</div>
+<div class="card">
+<h4>🏝 SkyWars</h4>
+<p>Combatti nelle isole volanti e diventa il migliore.</p>
+</div>
+<div class="card">
+<h4>🏆 Practice</h4>
+<p>Allena le tue skill contro altri giocatori.</p>
+</div>
+</div>
 </div>
 
 <footer>
